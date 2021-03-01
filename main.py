@@ -13,6 +13,8 @@ canvas.create_text(400, 263, text="Trouve", fill="black", font=("Ariel", 60, "bo
 canvas.grid(column=0, row=0)
 canvas.config(bg=BACKGROUND_COLOR, highlightthickness=0)
 
-
+cross_img = PhotoImage(file="images/wrong.png")
+wrong = Button(image=cross_img)
+wrong.grid(column=0, row=1)
 
 window.mainloop()
